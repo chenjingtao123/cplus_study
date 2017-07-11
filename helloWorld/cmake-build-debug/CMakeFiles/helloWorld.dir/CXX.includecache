@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/CLionProjects/cplus_study/helloWorld/HasPtr.cpp
+HasPtr.h
+/root/CLionProjects/cplus_study/helloWorld/HasPtr.h
+
+/root/CLionProjects/cplus_study/helloWorld/HasPtr.h
+string
+-
+
+/root/CLionProjects/cplus_study/helloWorld/Student.cpp
+iostream
+-
+Student.h
+/root/CLionProjects/cplus_study/helloWorld/Student.h
+
+/root/CLionProjects/cplus_study/helloWorld/Student.h
+string
+-
+
+/root/CLionProjects/cplus_study/helloWorld/main.cpp
+iostream
+-
+HasPtr.h
+/root/CLionProjects/cplus_study/helloWorld/HasPtr.h
+

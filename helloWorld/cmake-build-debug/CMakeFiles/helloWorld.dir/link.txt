@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-3/root/usr/bin/c++   -g   CMakeFiles/helloWorld.dir/main.cpp.o CMakeFiles/helloWorld.dir/Student.cpp.o CMakeFiles/helloWorld.dir/HasPtr.cpp.o  -o helloWorld 
