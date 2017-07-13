@@ -1,1 +1,1 @@
-/opt/rh/devtoolset-3/root/usr/bin/c++   -g   CMakeFiles/helloWorld.dir/main.cpp.o CMakeFiles/helloWorld.dir/Student.cpp.o CMakeFiles/helloWorld.dir/HasPtr.cpp.o  -o helloWorld 
+/opt/rh/devtoolset-3/root/usr/bin/c++    -std=c++11 -g   CMakeFiles/helloWorld.dir/HasPtr.cpp.o CMakeFiles/helloWorld.dir/main.cpp.o CMakeFiles/helloWorld.dir/Student.cpp.o CMakeFiles/helloWorld.dir/email/Folder.cpp.o CMakeFiles/helloWorld.dir/email/Message.cpp.o  -o helloWorld 

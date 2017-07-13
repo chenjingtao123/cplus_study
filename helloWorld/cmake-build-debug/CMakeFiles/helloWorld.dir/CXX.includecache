@@ -24,9 +24,11 @@ Student.h
 string
 -
 
+/root/CLionProjects/cplus_study/helloWorld/email/Folder.cpp
+
 /root/CLionProjects/cplus_study/helloWorld/main.cpp
 iostream
 -
-HasPtr.h
-/root/CLionProjects/cplus_study/helloWorld/HasPtr.h
+set
+-
 

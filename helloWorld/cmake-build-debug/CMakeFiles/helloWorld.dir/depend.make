@@ -7,6 +7,7 @@ CMakeFiles/helloWorld.dir/HasPtr.cpp.o: ../HasPtr.h
 CMakeFiles/helloWorld.dir/Student.cpp.o: ../Student.cpp
 CMakeFiles/helloWorld.dir/Student.cpp.o: ../Student.h
 
-CMakeFiles/helloWorld.dir/main.cpp.o: ../HasPtr.h
+CMakeFiles/helloWorld.dir/email/Folder.cpp.o: ../email/Folder.cpp
+
 CMakeFiles/helloWorld.dir/main.cpp.o: ../main.cpp
 

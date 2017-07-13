@@ -1,7 +1,10 @@
 cmake_minimum_required(VERSION 3.6)
 project(helloWorld)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp Student.h Student.cpp HasPtr.h HasPtr.cpp)
-add_executable(helloWorld ${SOURCE_FILES})
+aux_source_directory(. DIR_SRCS)
+
+
+add_executable(helloWorld ${DIR_SRCS} email/Folder.h email/Folder.cpp email/Message.h email/Message.cpp)
+

@@ -94,6 +94,18 @@
 		<Unit filename="/root/CLionProjects/cplus_study/helloWorld/Student.h">
 			<Option target="helloWorld"/>
 		</Unit>
+		<Unit filename="/root/CLionProjects/cplus_study/helloWorld/email/Folder.cpp">
+			<Option target="helloWorld"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/cplus_study/helloWorld/email/Folder.h">
+			<Option target="helloWorld"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/cplus_study/helloWorld/email/Message.cpp">
+			<Option target="helloWorld"/>
+		</Unit>
+		<Unit filename="/root/CLionProjects/cplus_study/helloWorld/email/Message.h">
+			<Option target="helloWorld"/>
+		</Unit>
 		<Unit filename="/root/CLionProjects/cplus_study/helloWorld/main.cpp">
 			<Option target="helloWorld"/>
 		</Unit>

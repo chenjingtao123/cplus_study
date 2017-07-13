@@ -1,21 +1,17 @@
 #include <iostream>
-#include "HasPtr.h"
+#include <set>
+#include <map>
+
+#define test(st) do{\
+    cout<<set.size()<<endl;\
+}while(1)
 
 using namespace std;
 
+
 int main() {
-
-    HasPtr obj1=HasPtr("cjt");
-
-    HasPtr obj2;
-
-    obj2=obj1;
-
-    cout<<*obj2.getUse()<<endl;
-
-    cout<<*obj1.getUse()<<endl;
-
-
+   map<string,string> map;
+    string ss=map.find("dd");
     return 0;
 }
 

@@ -6,6 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/root/CLionProjects/cplus_study/helloWorld/HasPtr.cpp" "/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles/helloWorld.dir/HasPtr.cpp.o"
   "/root/CLionProjects/cplus_study/helloWorld/Student.cpp" "/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles/helloWorld.dir/Student.cpp.o"
+  "/root/CLionProjects/cplus_study/helloWorld/email/Folder.cpp" "/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles/helloWorld.dir/email/Folder.cpp.o"
+  "/root/CLionProjects/cplus_study/helloWorld/email/Message.cpp" "/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles/helloWorld.dir/email/Message.cpp.o"
   "/root/CLionProjects/cplus_study/helloWorld/main.cpp" "/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles/helloWorld.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

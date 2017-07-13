@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /root/clion/clion-2016.3.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /root/cmake3.6.3/bin/cmake
 
 # The command to remove a file.
-RM = /root/clion/clion-2016.3.2/bin/cmake/bin/cmake -E remove -f
+RM = /root/cmake3.6.3/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -58,8 +58,8 @@ CMAKE_BINARY_DIR = /root/CLionProjects/cplus_study/helloWorld/cmake-build-debug
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/root/clion/clion-2016.3.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/root/cmake3.6.3/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/root/clion/clion-2016.3.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/root/cmake3.6.3/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -177,6 +177,60 @@ Student.cpp.s:
 	$(MAKE) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/Student.cpp.s
 .PHONY : Student.cpp.s
 
+email/Folder.o: email/Folder.cpp.o
+
+.PHONY : email/Folder.o
+
+# target to build an object file
+email/Folder.cpp.o:
+	$(MAKE) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/email/Folder.cpp.o
+.PHONY : email/Folder.cpp.o
+
+email/Folder.i: email/Folder.cpp.i
+
+.PHONY : email/Folder.i
+
+# target to preprocess a source file
+email/Folder.cpp.i:
+	$(MAKE) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/email/Folder.cpp.i
+.PHONY : email/Folder.cpp.i
+
+email/Folder.s: email/Folder.cpp.s
+
+.PHONY : email/Folder.s
+
+# target to generate assembly for a file
+email/Folder.cpp.s:
+	$(MAKE) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/email/Folder.cpp.s
+.PHONY : email/Folder.cpp.s
+
+email/Message.o: email/Message.cpp.o
+
+.PHONY : email/Message.o
+
+# target to build an object file
+email/Message.cpp.o:
+	$(MAKE) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/email/Message.cpp.o
+.PHONY : email/Message.cpp.o
+
+email/Message.i: email/Message.cpp.i
+
+.PHONY : email/Message.i
+
+# target to preprocess a source file
+email/Message.cpp.i:
+	$(MAKE) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/email/Message.cpp.i
+.PHONY : email/Message.cpp.i
+
+email/Message.s: email/Message.cpp.s
+
+.PHONY : email/Message.s
+
+# target to generate assembly for a file
+email/Message.cpp.s:
+	$(MAKE) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/email/Message.cpp.s
+.PHONY : email/Message.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -219,6 +273,12 @@ help:
 	@echo "... Student.o"
 	@echo "... Student.i"
 	@echo "... Student.s"
+	@echo "... email/Folder.o"
+	@echo "... email/Folder.i"
+	@echo "... email/Folder.s"
+	@echo "... email/Message.o"
+	@echo "... email/Message.i"
+	@echo "... email/Message.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

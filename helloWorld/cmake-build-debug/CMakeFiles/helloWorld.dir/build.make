@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /root/clion/clion-2016.3.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /root/cmake3.6.3/bin/cmake
 
 # The command to remove a file.
-RM = /root/clion/clion-2016.3.2/bin/cmake/bin/cmake -E remove -f
+RM = /root/cmake3.6.3/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -57,9 +57,33 @@ include CMakeFiles/helloWorld.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/helloWorld.dir/flags.make
 
+CMakeFiles/helloWorld.dir/HasPtr.cpp.o: CMakeFiles/helloWorld.dir/flags.make
+CMakeFiles/helloWorld.dir/HasPtr.cpp.o: ../HasPtr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/helloWorld.dir/HasPtr.cpp.o"
+	/opt/rh/devtoolset-3/root/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloWorld.dir/HasPtr.cpp.o -c /root/CLionProjects/cplus_study/helloWorld/HasPtr.cpp
+
+CMakeFiles/helloWorld.dir/HasPtr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloWorld.dir/HasPtr.cpp.i"
+	/opt/rh/devtoolset-3/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/CLionProjects/cplus_study/helloWorld/HasPtr.cpp > CMakeFiles/helloWorld.dir/HasPtr.cpp.i
+
+CMakeFiles/helloWorld.dir/HasPtr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloWorld.dir/HasPtr.cpp.s"
+	/opt/rh/devtoolset-3/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/CLionProjects/cplus_study/helloWorld/HasPtr.cpp -o CMakeFiles/helloWorld.dir/HasPtr.cpp.s
+
+CMakeFiles/helloWorld.dir/HasPtr.cpp.o.requires:
+
+.PHONY : CMakeFiles/helloWorld.dir/HasPtr.cpp.o.requires
+
+CMakeFiles/helloWorld.dir/HasPtr.cpp.o.provides: CMakeFiles/helloWorld.dir/HasPtr.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/HasPtr.cpp.o.provides.build
+.PHONY : CMakeFiles/helloWorld.dir/HasPtr.cpp.o.provides
+
+CMakeFiles/helloWorld.dir/HasPtr.cpp.o.provides.build: CMakeFiles/helloWorld.dir/HasPtr.cpp.o
+
+
 CMakeFiles/helloWorld.dir/main.cpp.o: CMakeFiles/helloWorld.dir/flags.make
 CMakeFiles/helloWorld.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/helloWorld.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/helloWorld.dir/main.cpp.o"
 	/opt/rh/devtoolset-3/root/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloWorld.dir/main.cpp.o -c /root/CLionProjects/cplus_study/helloWorld/main.cpp
 
 CMakeFiles/helloWorld.dir/main.cpp.i: cmake_force
@@ -83,7 +107,7 @@ CMakeFiles/helloWorld.dir/main.cpp.o.provides.build: CMakeFiles/helloWorld.dir/m
 
 CMakeFiles/helloWorld.dir/Student.cpp.o: CMakeFiles/helloWorld.dir/flags.make
 CMakeFiles/helloWorld.dir/Student.cpp.o: ../Student.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/helloWorld.dir/Student.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/helloWorld.dir/Student.cpp.o"
 	/opt/rh/devtoolset-3/root/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloWorld.dir/Student.cpp.o -c /root/CLionProjects/cplus_study/helloWorld/Student.cpp
 
 CMakeFiles/helloWorld.dir/Student.cpp.i: cmake_force
@@ -105,45 +129,73 @@ CMakeFiles/helloWorld.dir/Student.cpp.o.provides: CMakeFiles/helloWorld.dir/Stud
 CMakeFiles/helloWorld.dir/Student.cpp.o.provides.build: CMakeFiles/helloWorld.dir/Student.cpp.o
 
 
-CMakeFiles/helloWorld.dir/HasPtr.cpp.o: CMakeFiles/helloWorld.dir/flags.make
-CMakeFiles/helloWorld.dir/HasPtr.cpp.o: ../HasPtr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/helloWorld.dir/HasPtr.cpp.o"
-	/opt/rh/devtoolset-3/root/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloWorld.dir/HasPtr.cpp.o -c /root/CLionProjects/cplus_study/helloWorld/HasPtr.cpp
+CMakeFiles/helloWorld.dir/email/Folder.cpp.o: CMakeFiles/helloWorld.dir/flags.make
+CMakeFiles/helloWorld.dir/email/Folder.cpp.o: ../email/Folder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/helloWorld.dir/email/Folder.cpp.o"
+	/opt/rh/devtoolset-3/root/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloWorld.dir/email/Folder.cpp.o -c /root/CLionProjects/cplus_study/helloWorld/email/Folder.cpp
 
-CMakeFiles/helloWorld.dir/HasPtr.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloWorld.dir/HasPtr.cpp.i"
-	/opt/rh/devtoolset-3/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/CLionProjects/cplus_study/helloWorld/HasPtr.cpp > CMakeFiles/helloWorld.dir/HasPtr.cpp.i
+CMakeFiles/helloWorld.dir/email/Folder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloWorld.dir/email/Folder.cpp.i"
+	/opt/rh/devtoolset-3/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/CLionProjects/cplus_study/helloWorld/email/Folder.cpp > CMakeFiles/helloWorld.dir/email/Folder.cpp.i
 
-CMakeFiles/helloWorld.dir/HasPtr.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloWorld.dir/HasPtr.cpp.s"
-	/opt/rh/devtoolset-3/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/CLionProjects/cplus_study/helloWorld/HasPtr.cpp -o CMakeFiles/helloWorld.dir/HasPtr.cpp.s
+CMakeFiles/helloWorld.dir/email/Folder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloWorld.dir/email/Folder.cpp.s"
+	/opt/rh/devtoolset-3/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/CLionProjects/cplus_study/helloWorld/email/Folder.cpp -o CMakeFiles/helloWorld.dir/email/Folder.cpp.s
 
-CMakeFiles/helloWorld.dir/HasPtr.cpp.o.requires:
+CMakeFiles/helloWorld.dir/email/Folder.cpp.o.requires:
 
-.PHONY : CMakeFiles/helloWorld.dir/HasPtr.cpp.o.requires
+.PHONY : CMakeFiles/helloWorld.dir/email/Folder.cpp.o.requires
 
-CMakeFiles/helloWorld.dir/HasPtr.cpp.o.provides: CMakeFiles/helloWorld.dir/HasPtr.cpp.o.requires
-	$(MAKE) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/HasPtr.cpp.o.provides.build
-.PHONY : CMakeFiles/helloWorld.dir/HasPtr.cpp.o.provides
+CMakeFiles/helloWorld.dir/email/Folder.cpp.o.provides: CMakeFiles/helloWorld.dir/email/Folder.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/email/Folder.cpp.o.provides.build
+.PHONY : CMakeFiles/helloWorld.dir/email/Folder.cpp.o.provides
 
-CMakeFiles/helloWorld.dir/HasPtr.cpp.o.provides.build: CMakeFiles/helloWorld.dir/HasPtr.cpp.o
+CMakeFiles/helloWorld.dir/email/Folder.cpp.o.provides.build: CMakeFiles/helloWorld.dir/email/Folder.cpp.o
+
+
+CMakeFiles/helloWorld.dir/email/Message.cpp.o: CMakeFiles/helloWorld.dir/flags.make
+CMakeFiles/helloWorld.dir/email/Message.cpp.o: ../email/Message.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/helloWorld.dir/email/Message.cpp.o"
+	/opt/rh/devtoolset-3/root/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/helloWorld.dir/email/Message.cpp.o -c /root/CLionProjects/cplus_study/helloWorld/email/Message.cpp
+
+CMakeFiles/helloWorld.dir/email/Message.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/helloWorld.dir/email/Message.cpp.i"
+	/opt/rh/devtoolset-3/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/CLionProjects/cplus_study/helloWorld/email/Message.cpp > CMakeFiles/helloWorld.dir/email/Message.cpp.i
+
+CMakeFiles/helloWorld.dir/email/Message.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/helloWorld.dir/email/Message.cpp.s"
+	/opt/rh/devtoolset-3/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/CLionProjects/cplus_study/helloWorld/email/Message.cpp -o CMakeFiles/helloWorld.dir/email/Message.cpp.s
+
+CMakeFiles/helloWorld.dir/email/Message.cpp.o.requires:
+
+.PHONY : CMakeFiles/helloWorld.dir/email/Message.cpp.o.requires
+
+CMakeFiles/helloWorld.dir/email/Message.cpp.o.provides: CMakeFiles/helloWorld.dir/email/Message.cpp.o.requires
+	$(MAKE) -f CMakeFiles/helloWorld.dir/build.make CMakeFiles/helloWorld.dir/email/Message.cpp.o.provides.build
+.PHONY : CMakeFiles/helloWorld.dir/email/Message.cpp.o.provides
+
+CMakeFiles/helloWorld.dir/email/Message.cpp.o.provides.build: CMakeFiles/helloWorld.dir/email/Message.cpp.o
 
 
 # Object files for target helloWorld
 helloWorld_OBJECTS = \
+"CMakeFiles/helloWorld.dir/HasPtr.cpp.o" \
 "CMakeFiles/helloWorld.dir/main.cpp.o" \
 "CMakeFiles/helloWorld.dir/Student.cpp.o" \
-"CMakeFiles/helloWorld.dir/HasPtr.cpp.o"
+"CMakeFiles/helloWorld.dir/email/Folder.cpp.o" \
+"CMakeFiles/helloWorld.dir/email/Message.cpp.o"
 
 # External object files for target helloWorld
 helloWorld_EXTERNAL_OBJECTS =
 
+helloWorld: CMakeFiles/helloWorld.dir/HasPtr.cpp.o
 helloWorld: CMakeFiles/helloWorld.dir/main.cpp.o
 helloWorld: CMakeFiles/helloWorld.dir/Student.cpp.o
-helloWorld: CMakeFiles/helloWorld.dir/HasPtr.cpp.o
+helloWorld: CMakeFiles/helloWorld.dir/email/Folder.cpp.o
+helloWorld: CMakeFiles/helloWorld.dir/email/Message.cpp.o
 helloWorld: CMakeFiles/helloWorld.dir/build.make
 helloWorld: CMakeFiles/helloWorld.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable helloWorld"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/CLionProjects/cplus_study/helloWorld/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable helloWorld"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/helloWorld.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -151,9 +203,11 @@ CMakeFiles/helloWorld.dir/build: helloWorld
 
 .PHONY : CMakeFiles/helloWorld.dir/build
 
+CMakeFiles/helloWorld.dir/requires: CMakeFiles/helloWorld.dir/HasPtr.cpp.o.requires
 CMakeFiles/helloWorld.dir/requires: CMakeFiles/helloWorld.dir/main.cpp.o.requires
 CMakeFiles/helloWorld.dir/requires: CMakeFiles/helloWorld.dir/Student.cpp.o.requires
-CMakeFiles/helloWorld.dir/requires: CMakeFiles/helloWorld.dir/HasPtr.cpp.o.requires
+CMakeFiles/helloWorld.dir/requires: CMakeFiles/helloWorld.dir/email/Folder.cpp.o.requires
+CMakeFiles/helloWorld.dir/requires: CMakeFiles/helloWorld.dir/email/Message.cpp.o.requires
 
 .PHONY : CMakeFiles/helloWorld.dir/requires
 

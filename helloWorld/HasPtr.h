@@ -22,6 +22,10 @@ namespace Test{
             ++*(this->use);
             return *this;
         }
+//        HasPtr& operator=(HasPtr op){
+//            swap(*this,op);
+//            return *this;
+//        }
         ~HasPtr(){
             if(--*use==0){
                 delete ps;
